@@ -81,10 +81,10 @@ function Rev(Char) {
     if (string.length >= 3) {
         return "most 2 Charicter"
     } else {
-        for (let i = 2; i > 0; i--) {
-            resolt = string[i]
+        for (let i = 1; i > -1; i--) {
+            resolt += string[i]
         }
         return resolt
     }
 }
-console.log(Rev("Ew"))
+console.log(Rev("sj"))
