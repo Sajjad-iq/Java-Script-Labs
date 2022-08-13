@@ -74,4 +74,17 @@ function removeChr(str, index) {
     return string.join("")
 }
 
-console.log(removeChr("hello", 2))
+/*  Write a JavaScript program to create a new string from a given string changing the position of first and last characters. The string length must be greater than or equal to 1 */
+function Rev(Char) {
+    let string = Char
+    let resolt = ""
+    if (string.length >= 3) {
+        return "most 2 Charicter"
+    } else {
+        for (let i = 2; i > 0; i--) {
+            resolt = string[i]
+        }
+        return resolt
+    }
+}
+console.log(Rev("Ew"))
