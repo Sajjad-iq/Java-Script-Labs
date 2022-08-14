@@ -87,4 +87,39 @@ function Rev(Char) {
         return resolt
     }
 }
-console.log(Rev("sj"))
+/* Write a JavaScript program to create a new string from a given string with the first character of the given string added at the front and back. */
+function RevCHr(str) {
+    let Resolt = ""
+    for (let i = 0; i < str.length; i++) {
+        if (i == 0) {
+            continue;
+        } if (i == str.length - 1) {
+            continue;
+        }
+        Resolt += str[i]
+    }
+    return Resolt
+}
+
+//day 3
+/* Write a JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them are in the said range */
+function range(int, lowRange, highRange) {
+    if (int >= lowRange && int <= highRange) {
+        return true
+    } else {
+        return false
+    }
+}
+/* Write a JavaScript program to find the largest of three given integers.  */
+function largeint(...int) {
+    let newArr = ""
+    for (let i = 0; i < int.length; i++) {
+        if (int[i] >= int[i + 1]) {
+            newArr = int[i]
+        } else if (int[i] <= int[i + 1]) {
+            newArr = int[i + 1]
+        }
+    }
+    return newArr
+}
+console.log(largeint(5, 15, 10, 20))
