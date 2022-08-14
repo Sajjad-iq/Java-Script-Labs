@@ -122,4 +122,25 @@ function largeint(...int) {
     }
     return newArr
 }
-console.log(largeint(5, 15, 10, 20))
+
+/* Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive */
+function RangeLarge(int1, int2, lowRan, highRan) {
+    if (int1 >= lowRan && int1 <= highRan && int2 >= lowRan && int2 <= highRan) {
+        const resolt = int1 < int2 ? int2 : int1
+        return resolt
+    } else {
+        return `Out OF Range`
+    }
+}
+
+/* Write a JavaScript program to find a value which is nearest to 100 from two different given integer values */
+function near100(int1, int2) {
+    let resolt = ""
+    if (int1 >= int2 && int1 <= 100) {
+        resolt = int1
+    } else if (int1 <= int2 && int2 <= 100) {
+        resolt = int2
+    }
+    return resolt
+}
+console.log(near100(55, 49))
